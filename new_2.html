@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+
+  
+<style>
+body {
+       background: url(ws_Oasis-night_1920x1200.jpg);
+}
+a {
+    color: #ffff;
+   }
+   a:hover {
+    color: #ffff;
+   }
+
+a.nav-link.dropdown-toggle {
+    margin-left: 1149%;
+}
+.nav-tabs {
+     border-bottom: 0px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+     color: #ffff; 
+    background-color: transparent; 
+     border-color: transparent;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+.dropdown-menu {
+         background-color: transparent;
+  
+}
+.dropdown-item {
+       color: #ffff;
+   }
+.dropdown-menu.show {
+    border: blanchedalmond;
+}
+form {
+    width: 30%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 11%;
+}
+input[type="text"], input[type="password"] {
+    margin-left: 94px;
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: 1px;
+    width: 206px;
+    color: #ffff;
+    width: 174px;
+}
+input.btn.btn-primary {
+    margin-left: 94px;
+    width: 162%;
+    margin-bottom: 28px;
+}
+.overly {
+    background: #000;
+    width: 100%;
+    opacity: 0.6;
+    margin-left: 36%;
+    margin-right: 36%;
+    margin-top: 34px;
+    border-radius: 31px;
+}
+input[type="text"],input[type="password"]:focus {
+      outline: none;
+}
+label {
+    color: #fff;
+    margin-top: 17px;
+    margin-left: 94px;
+}
+.section {
+    padding-top: 90px;
+}
+h1 {
+    margin-top: -85px;
+    margin-left: 93px;
+    color: #fff;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 72%;
+    border-radius: 89px;
+    margin-top: -54px;
+    margin-left: 133px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: unset;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+span.fa.fa-eye-slash {
+    margin-left: -17px;
+    color: antiquewhite;
+}
+span#passon {
+ color: antiquewhite;
+}
+.ch {
+    display: -webkit-inline-box;
+	margin-top: 9px;
+    margin-left: 93px;
+}
+p {
+   
+    color: antiquewhite;
+    width: 124px;
+    margin-left: 14px;
+}
+</style>
+<script>
+ $(document).ready(function(){
+
+             $("#passon").click(function(){
+                 $("#myInput").attr("type","text");
+				  $("#passon").hide();
+                 $("#pass").show();
+             });
+
+             $("#pass").click(function(){
+                  $("#myInput").attr("type","password");
+				  $("#pass").hide();
+                 $("#passon").show().css({'display': 'contents !important'}); 
+				 
+             });
+
+         });
+</script>
+</head>
+<body>
+<div class="rows">
+   <ul class="nav nav-tabs">
+     <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Setting</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Login</a>
+        <a class="dropdown-item" href="new_3.html">Registration</a>
+            </li>
+      </ul>
+</div>
+</div>
+<div class="overly">
+<form class="form">
+<img src="j5Zeo.jpg" alt="Avatar" class="img-rounded">
+<div class="section">
+
+<h1>Login</h1>
+<label>Email</label>
+<input type="text" placeholder="Email">
+
+<label>Password</label>
+  <div class="row">
+<input type="password" placeholder="**********" id="myInput">
+<span class="fa fa-eye-slash" id="pass">
+	</span>
+	
+<span><i class="fa fa-eye" id="passon" hidden></i></span>
+</div>
+<div class="ch">
+<input type="checkbox" checked>
+<p>Remember me.</p>
+</div>
+<input type="submit" class="btn btn-primary" value="Login">
+
+</div>
+</form>
+</div>
+
+</body>
+</html>

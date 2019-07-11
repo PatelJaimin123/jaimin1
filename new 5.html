@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+body {
+       background: url(ws_Oasis-night_1920x1200.jpg);
+	   
+}
+.mySlides {
+    background: #000;
+    width: 128%;
+    opacity: 0.6;
+    margin-left: -6%;
+    margin-top: 618px;
+    border-radius: 31px;
+}
+
+.mySlides {display:none;}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+form {
+    width: 98%;
+    height: auto;
+       margin-top: 4%;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+     margin-right: 0px; 
+     margin-left: 0px; 
+}
+h1 {
+    color: beige;
+    margin-left: 65px;
+      }
+label {
+    color: #fff;
+    margin-top: 17px;
+    margin-left: 52px;
+}
+
+input[type="text"],input[type="password"] {
+    margin-left: 50px;
+       background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom-color: 1px;
+    width: 206px;
+    color: #ffff;
+}
+input.btn.btn-success {
+    margin-left: 48px;
+    width: 68%;
+    margin-top: 15px;
+    margin-bottom: 63px;
+}
+input[type="text"],input[type="password"]:focus {
+      outline: none;
+}
+select.form-control {
+    margin-top: 14px;
+    margin-left: 47px;
+    width: 69%;
+    background: none;
+    color: white;
+}
+select.form-control:focus{
+background: none;
+}
+select.form-control option{
+background: none;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+    width: 18%;
+    border-radius: 89px;
+    
+}
+.w3-display-right {
+    position: absolute;
+     right: 138px;
+     margin-top: 34%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+}
+.w3-display-left {
+    position: absolute;
+	    margin-top: 34%;
+    left: 216px;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+img.img-rounded {
+    margin-left: 42%;
+    margin-top: -68px;
+}
+.w3-black, .w3-hover-black:hover {
+    color: #fff!important;
+    background-color: #000000!important;
+}
+</style>
+<body>
+
+<div class="w3-content w3-display-container">
+ 
+ <div class="centered">
+ <div class="mySlides">
+  <form class="form">
+	  <img src="j5Zeo.jpg" alt="Avatar" class="img-rounded">
+              <h1>Registration</h1>
+			
+			       <div class="row">
+				     <div class="col-sm-6">
+						<label>First Name</label>
+						<input type="text" placeholder="First Name">
+						<label>Email</label>
+						<input type="text" placeholder="Email">
+						<input type="submit" class="btn btn-success" value="Submit">
+				  </div>
+				  <div class="col-sm-6">
+					   <label>Last Name</label>
+					   <input type="text" placeholder="Last Name">
+					   <label>Password</label>
+					   <input type="password" placeholder="**********"><br />
+					   <select class="form-control">
+					   <option>Select</option>
+						  <option value="volvo">Surat</option>
+						  <option value="saab">Baroda</option>
+						  <option value="mercedes">Rajkot</option>
+						  <option value="audi">Bharuch</option>
+					  </select>
+				  </div>
+		       </div>
+							   
+			 
+      </form>
+	 
+ </div>
+ </div>
+
+ 
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+debugger
+
+  showDivs(slideIndex += n);
+ if(n == 1)
+ {
+ 
+        $(".mySlides").css("background-color","blue"); //edit, body must be in quotes!
+    }
+	else
+	{
+	$(".mySlides").css("background-color","black");
+	}
+	
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+
+
+</script>
+
+</body>
+</html>
